@@ -28,6 +28,7 @@
             color: gold;
             border: 4px solid black;
             border-radius: 5px;
+            
         }
     </style>
 
@@ -37,34 +38,30 @@
     <table>
         <tr>
             <td colspan="3">
-                <input type="text" id="result">
+                <input type="text" id="result" disabled>
             </td>
             <td><input type="button" onclick="clearinput()" value="C"></td>
-            <td><input type="button" onclick="clearall()" value="AC"></td>
         </tr>
         <tr>
-            <td><input type="button" onclick="answer()" value="ANS"></td>
             <td><input type="button" onclick="appendNumber(1)" value="1"></td>
             <td><input type="button" onclick="appendNumber(2)" value="2"></td>
             <td><input type="button" onclick="appendNumber(3)" value="3"></td>
             <td><input type="button" onclick="divide()" value="/"></td>
         </tr>
         <tr>
-            <td><input type="button" onclick="exponent()" value="^"></td>
             <td><input type="button" onclick="appendNumber(4)" value="4"></td>
             <td><input type="button" onclick="appendNumber(5)" value="5"></td>
             <td><input type="button" onclick="appendNumber(6)" value="6"></td>
             <td><input type="button" onclick="multiply()" value="*"></td>
         </tr>
         <tr>
-            <td><input type="button" onclick="percent()" value="%"></td>
             <td><input type="button" onclick="appendNumber(7)" value="7"></td>
             <td><input type="button" onclick="appendNumber(8)" value="8"></td>
             <td><input type="button" onclick="appendNumber(9)" value="9"></td>
             <td><input type="button" onclick="minus()" value="-"></td>
         </tr>
         <tr>
-            <td><input type="button" onclick="appendNumber(1)" value="()"></td>
+
             <td><input type="button" onclick="appendNumber('.')" value="."></td>
             <td><input type="button" onclick="appendNumber(0)" value="0"></td>
             <td><input type="button" onclick="calculate()" value="="></td>
